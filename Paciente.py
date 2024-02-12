@@ -13,21 +13,17 @@ class Paciente:
     def asignar_historia_clinica(self, historia_clinica):
         self.historia_clinica = historia_clinica
 
-
     @classmethod
     def buscar_paciente_por_documento(cls, documento):
         for paciente in cls.lista_pacientes:
             if paciente.documento == documento:
                 return paciente
         return None
-    
+
     @classmethod
     def eliminar_paciente_por_documento(cls, documento):
         for paciente in cls.lista_pacientes:
-            if paciente.documento==documento:
-                cls.lista_pacientes.remove(paciente)                
-                return True        
+            if paciente.documento == documento:
+                cls.lista_pacientes.remove(paciente)
+                return True
         return False
-
-
-    
