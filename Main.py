@@ -27,6 +27,7 @@ def iniciar_sesion(usuario, contrasena):
         print("Inicio de sesión fallido. Usuario o contraseña incorrectos.")
 
 
+# Funcion para abrir el menu principal
 def abrir_menu():
     global cantidad_altas
     limpiar_consola()
@@ -54,7 +55,7 @@ def abrir_menu():
     # Imprimir línea inferior de la tabla
     imprimir_animacion("\t\t\t\t\t--" + "-" * 30 + "--\n")
 
-    imprimir_animacion("\t\t\t\t\tEscoge una opcion (1-4): ")
+    imprimir_animacion("\t\t\t\t\tEscoge una opcion (1-5): ")
     opcion_escogida = input()
     if opcion_escogida == "1":
         ingresar_paciente()
